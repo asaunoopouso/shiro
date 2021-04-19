@@ -22,9 +22,9 @@ public class AuthenticatedServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Subject subject = SecurityUtils.getSubject();
         if(subject.isAuthenticated()) {
-            req.getRequestDispatcher("/WEB-INF/jsp/authenticated.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/ch07/jsp/authenticated.jsp").forward(req, resp);
         } else {
-            req.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/ch07/jsp/login.jsp").forward(req, resp);
         }
     }
 
