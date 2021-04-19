@@ -8,6 +8,13 @@
 	<name>shiro Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-web</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
